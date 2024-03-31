@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Vovka88/chat/static/css/main.6cb1909a.css",
-    "main.js": "/Vovka88/chat/static/js/main.d5b3a883.js",
-    "index.html": "/Vovka88/chat/index.html",
-    "main.6cb1909a.css.map": "/Vovka88/chat/static/css/main.6cb1909a.css.map",
-    "main.d5b3a883.js.map": "/Vovka88/chat/static/js/main.d5b3a883.js.map"
+    "main.css": "/chat/static/css/main.6cb1909a.css",
+    "main.js": "/chat/static/js/main.1c35e612.js",
+    "index.html": "/chat/index.html",
+    "main.6cb1909a.css.map": "/chat/static/css/main.6cb1909a.css.map",
+    "main.1c35e612.js.map": "/chat/static/js/main.1c35e612.js.map"
   },
   "entrypoints": [
     "static/css/main.6cb1909a.css",
-    "static/js/main.d5b3a883.js"
+    "static/js/main.1c35e612.js"
   ]
 }
