@@ -1,14 +1,19 @@
 import { Box, Button, Container, Grid } from "@mui/material";
 import { useAppContext } from "../utils/context";
 import React from "react";
+import { addUserDB } from "../utils/saveUserData";
+import { useCollectionData } from "react-firebase-hooks/firestore";
 
 
 export default function Login() {
-  const { auth, firebase } = useAppContext();
+  const { auth, firebase, users} = useAppContext();
+  
+
   const login = async () => {
     const provider = new firebase.auth.GoogleAuthProvider();
     const {user} = await auth.signInWithPopup(provider);
     console.log(user);
+    addUserDB(user, users);
   }
 
   return (

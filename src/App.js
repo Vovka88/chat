@@ -1,4 +1,4 @@
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import { useAppContext } from "./utils/context";
 import { useAuthState } from "react-firebase-hooks/auth";
 import Navigation from "./components/Navigation";
@@ -11,11 +11,11 @@ function App() {
   const [ user, loading, error ] = useAuthState(auth);
   if(loading) {return <Loader/>}
   return (
-    <div>
-      <BrowserRouter>
+    <div className="App">
+      <HashRouter basename={process.env.PUBLIC_URL}>
         <Navigation />
         <AppRouter />
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
